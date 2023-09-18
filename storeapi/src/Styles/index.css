@@ -1,0 +1,17 @@
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    margin: 0px;
+        
+}
+
+html {
+    background-size: cover ;
+    background: linear-gradient(aquamarine, #1FBED6);
+    width: cover;
+    height: cover;
+}
