@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+
+.buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+
+.buttonsR {
+    height: 40px;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    border: unset;
+    border-bottom-right-radius: 0.5em;
+    color: gray;
+    font-weight: bold;
+}
+
+
+.buttonsL {
+    height: 40px;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    border: unset;
+    border-bottom-left-radius: 0.5em;
+    color: gray;
+    font-weight: bold;
+}
+
+
+
+
+.buttonsL:hover {
+    background-color: rgb(243, 234, 234);
+}
+
+
+.buttonsR:hover {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation: slidebg 5s linear infinite;
+}
+
+
+.buttonsL:active {
+    color: rgb(34, 25, 25);
+    background-color: rgb(243, 234, 234);
+}
+
+
+.buttonsR:active {
+    color: rgb(34, 25, 25);
+    background-color: rgb(243, 234, 234);
+}

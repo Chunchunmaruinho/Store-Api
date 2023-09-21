@@ -1,17 +1,18 @@
-import '/Users/gm2academy/storeapi/src/Styles/Card.css'
-import {Header} from './Header.jsx'
-import {Section} from './Section.jsx'
+import "/Users/gm2academy/Store-Api/storeapi/src/Styles/App.css";
+import { Header } from "./Header.jsx";
+import { Section } from "./Section.jsx";
+import { Options } from "./Options.jsx";
+
 
 function App() {
-  
+
 
   return (
-   
     <>
-      <Header/>
-      <Section/>
+      <Header />
+      <Options />
+      <Section />
     </>
-  )
+  );
 }
-
-export default App
+export default App;

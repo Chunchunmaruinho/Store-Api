@@ -1,0 +1,60 @@
+.card-table {
+    display: grid;
+    grid-template-columns: 266px 944px 100px 100px;
+    border: 5px solid rgb(215, 202, 202, 0.7);
+}
+
+
+.card-table-title-div {
+    border-right: 5px solid rgb(215, 202, 202, 0.7);
+}
+
+
+.card-table-description-div {
+    border-right: 5px solid rgb(215, 202, 202, 0.7);
+
+}
+
+
+.card-table-price-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px solid rgb(215, 202, 202, 0.7);
+}
+
+
+.card-table-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card-table-title {
+    color: #898686;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+
+}
+
+
+.card-table-image {
+    width: 90px;
+    height: 100px;
+}
+
+
+.card-table-description {
+    padding-left: 10px;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.card-table-price {
+    display: flex;
+    justify-content: center;
+    color: grey;
+}

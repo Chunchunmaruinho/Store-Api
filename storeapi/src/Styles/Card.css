@@ -1,16 +1,71 @@
 .card {
-    background-color: azure;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 450px;
-    border-radius: 0.5em;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 500px;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: gray;
+}
+
+
+.card-buttons {
+  width: 100%;
+
+}
+
+
+.card-price {
+  color: grey;
+}
+
+
+.card:hover {
+  border-color: black;
 }
 
 
 .card-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+
+.card-title {
+  padding-right: 9px;
+  padding-left: 9px;
+  color: #898686;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.card-description {
+  padding-right: 9px;
+  padding-left: 18px;
+  color: gray;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+
+}
+
+
+.card-image-div {
+  background-color: white;
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.image {
+  width: 180px;
+  height: 200px;
 }

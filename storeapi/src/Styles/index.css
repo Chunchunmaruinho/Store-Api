@@ -1,17 +1,16 @@
 #root {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 
 body {
-    margin: 0px;
-        
+  margin: 0px;
 }
 
+
 html {
-    background-size: cover ;
-    background: linear-gradient(aquamarine, #1FBED6);
-    width: cover;
-    height: cover;
+  background-size: cover;
+  background: linear-gradient(rgb(247, 231, 139), rgb(235, 205, 73));
+  width: cover;
+  height: cover;
 }
