@@ -1,7 +1,11 @@
-import "/Users/gm2academy/Store-Api/storeapi/src/Styles/Options.css";
+import "../Styles/Options.css";
 
 
-function Options() {
+function Options({cardsFormat, onViewChange}) {
+    const hanldeViewChange= (e)=>{
+        onViewChange(e.target.value);
+    };
+
 
     return (
         <div className="card-options-div">
@@ -13,11 +17,13 @@ function Options() {
                     </svg>
                 </span>
             </button>
-
-            <select name="optionCards" id="cardsFormat">
-                <option value="0">Card</option>
-                <option value="1">Table</option>
+            <div>
+             <label htmlFor="cardsFormat">Layout</label>
+            <select id="cardsFormat" value={cardsFormat} onChange={hanldeViewChange} >
+                <option value="cards">Card</option>
+                <option value="table">Table</option>
             </select>
+            </div>
         </div>
 
     )

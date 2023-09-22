@@ -1,4 +1,4 @@
-import "/Users/gm2academy/Store-Api/storeapi/src/Styles/Nav.css";
+import "../Styles/Nav.css";
 
 function Nav() {
   return (

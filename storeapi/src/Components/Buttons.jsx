@@ -1,4 +1,4 @@
-import "/Users/gm2academy/Store-Api/storeapi/src/Styles/Buttons.css";
+import "../Styles/Buttons.css";
 
 function Buttons() {
     return (

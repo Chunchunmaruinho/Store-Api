@@ -1,4 +1,4 @@
-import '/Users/gm2academy/Store-Api/storeapi/src/Styles/Section.css'
+import '../Styles/Section.css'
 import { Options } from './Options.jsx'
 import { CardTable } from './Card-table.jsx'
 import { Card } from './Card.jsx'
@@ -29,35 +29,43 @@ const PRODUCT = [
 ]
 
 
-//const [currenView, setCurrentView] = useState('cards')
-
 
 function Section() {
+    const[cardsFormat, setCardsFormat]= useState('table');
 
-    const cardMap = PRODUCT.map((product) =>
-        // <Card
-        //     key={product.id}
-        //     image={product.image}
-        //     title={product.title}
-        //     description={product.description}
-        //     price={product.price}
-        // />       
+     const handleViewChange = (selectedView) => {
+        setCardsFormat(selectedView);
+      };
 
-        <CardTable
-            key={product.id}
-            image={product.image}
-            title={product.title}
-            description={product.description}
-            price={product.price}
-        />
+      
+  const productView = cardsFormat === 'cards' ? (
+    PRODUCT.map((product) => (
+      <Card
+        key={product.id}
+        image={product.image}
+        title={product.title}
+        description={product.description}
+        price={product.price}
+      />
+    ))
+  ) : (
+    PRODUCT.map((product) => (
+      <CardTable
+        key={product.id}
+        image={product.image}
+        title={product.title}
+        description={product.description}
+        price={product.price}
+      />
+    ))
+  );
 
-    );
-
-    return (
-        <div className='card-container'>
-            {cardMap}
-        </div>
-    );
+  return (
+    <div className="card-container">
+      <Options cardsFormat={cardsFormat} onViewChange={handleViewChange} /> {/* Render the Options component */}
+      {productView}
+    </div>
+  );
 }
 
 

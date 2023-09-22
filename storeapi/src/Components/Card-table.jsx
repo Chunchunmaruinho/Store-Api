@@ -1,4 +1,4 @@
-import "/Users/gm2academy/Store-Api/storeapi/src/Styles/Card-table.css"
+import "../Styles/Card-table.css"
 
 
 function CardTable({ image, title, description, price }) {

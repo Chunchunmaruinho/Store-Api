@@ -1,4 +1,4 @@
-import "/Users/gm2academy/Store-Api/storeapi/src/Styles/Card.css";
+import "../Styles/Card.css";
 import { Buttons } from "./Buttons.jsx";
 
 function Card({ id, image, title, price, description, category, rating }) {

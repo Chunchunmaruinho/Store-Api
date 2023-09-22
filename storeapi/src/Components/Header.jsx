@@ -1,4 +1,4 @@
-import "/Users/gm2academy/Store-Api/storeapi/src/Styles/Header.css";
+import "../Styles/Header.css";
 import { Nav } from "./Nav.jsx";
 
 function Header() {
